@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fonts/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>FORM</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <fieldset class="flex">
+          <legend>Укажите ваши данные</legend>
+          <label> Ваше имя:<input type="text" /></label>
+          <label> Ваша Фамилия:<input type="text" /></label>
+          <label> Электронная почта:<input type="email" /></label>
+        </fieldset>
+        <fieldset class="flex">
+          <legend>Данные про ваш курс</legend>
+          <label>
+            Выберите ваш курс:
+            <select name="yourCourse">
+              <option value="val1" selected disabled>выберите из списка</option>
+              <option value="val2">front-end Basic</option>
+              <option value="val3">front-end Pro</option>
+            </select>
+          </label>
+          <div class="flex">
+            Выполняете ли вы домашние задания:
+            
+            <label> Да выполняю <input type="radio" name="val1" /></label>
+            
+            <label> Нет, не выполняю <input type="radio" name="val1" /> </label>
+          </div>
+          <div class="flex">
+            Дополнительная информация:
+            <label
+              ><input type="checkbox" value="yes" /> Буду продолжать
+              обучение</label
+            >
+            <label
+              ><input type="checkbox" value="no" /> Дополнительно занимаюсь
+              английским</label
+            >
+          </div>
+        </fieldset>
+        <input type="submit" value="Send" />
+        <button id="prevent" type="submit">Send width prevent</button>
+      </form>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
